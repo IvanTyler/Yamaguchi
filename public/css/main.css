@@ -47,6 +47,7 @@ body {
 @media (max-width: 850px) {
   .section-ergonomics .container-table .ergonomics-table {
     height: 650px;
+    margin-top: 15px;
   }
 }
 @media (max-width: 720px) {
