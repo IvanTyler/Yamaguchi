@@ -150,7 +150,7 @@ body {
 }
 @media (max-width: 360px) {
   .section-ergonomics .container-table .ergonomics-table .table-adjuster {
-    top: 130px;
+    top: 140px;
   }
 }
 .section-ergonomics .container-table .ergonomics-table .table-adjuster__item {
