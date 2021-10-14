@@ -12,6 +12,10 @@
     max-width: 1800px;
     padding: 0 20px;
     margin: 0 auto;
+    @media (max-width: 1650px) {
+        max-width: 1400px;
+
+    }
 }
 
 body {
@@ -22,12 +26,26 @@ body {
     display: flex;
     justify-content: space-between;
     padding-top: 30px;
+    padding-bottom: 30px;
     @media (max-width: 1650px) {
         align-items: center;
+    }
+    @media (max-width: 1240px) {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    @media (max-width: 800px) {
+        flex-direction: column;
+    }
+    @media (max-width: 800px) {
+        position: relative;
     }
     .section-description {
         color: #fff;
         margin-right: 40px;
+        @media (max-width: 800px) {
+            margin-right: 0;
+        }
         &__title {
             font-size: 56px;
             line-height: 60px;
@@ -35,23 +53,63 @@ body {
             margin-top: 25px;
             font-family: 'montserrat-light';
             max-width: 400px;
+            @media (max-width: 1650px) {
+                font-size: 50px;
+                margin-bottom: 30px;
+            }
+            @media (max-width: 1240px) {
+                max-width: initial;
+            }
+            @media (max-width: 450px) {
+                font-size: 34px;
+                line-height: 37px;
+                margin-top: 0;
+            }
         }
         &__paragraph {
             max-width: 563px;
             font-size: 22px;
             line-height: 170%;
             font-family: 'montserrat-light';
+            @media (max-width: 1240px) {
+                max-width: initial;
+            }
             &:not(:last-of-type) {
                 margin-bottom: 30px;
+                @media (max-width: 1650px) {
+                    margin-bottom: 20px;
+                }
+            }
+            @media (max-width: 1650px) {
+                font-size: 20px;
+                line-height: 160%;
+            }
+            @media (max-width: 450px) {
+                font-size: 16px;
+                line-height: 27px;
             }
         }
         .wrapper-voice {
             margin-top: 35px;
             text-transform: uppercase;
+            @media (max-width: 1650px) {
+                margin-top: 25px;
+            }
+            @media (max-width: 800px) {
+                max-width: 315px;
+                position: absolute;
+                bottom: -10px;
+                transform: translateY(100%);
+                padding-bottom: 20px;
+            }
             &__tell {
                 font-size: 44px;
                 line-height: 90%;
                 font-family: 'montserrat-black';
+                @media (max-width: 1650px) {
+                    font-size: 34px;
+                    line-height: 80%;
+                }
             }
             &__okay-yamaguchi {
                 display: flex;
@@ -61,8 +119,14 @@ body {
                 font-size: 61px;
                 line-height: 90%;
                 font-family: 'montserrat-black';
-                .quotes {
-                    font-family: 'montserrat-regular';
+                @media (max-width: 1650px) {
+                    margin-top: 10px;
+                    font-size: 50px;
+                    line-height: 80%;
+                }
+                @media (max-width: 800px) {
+                    margin-left: 0;
+                    line-height: 100%;
                 }
             }
         }
@@ -74,6 +138,9 @@ body {
         @media (max-width: 1650px) {
             height: 600px;
             max-height: 100%;
+        }
+        @media (max-width: 1240px) {
+            margin-top: 20px;
         }
         .wrapper-girl {
             position: relative;
@@ -114,6 +181,15 @@ body {
     .wrapper-voice-control-yamaguchi {
         max-width: 730px;
         @media (max-width: 1650px) {
+            max-width: 400px;
+        }
+        @media (max-width: 1240px) {
+            max-width: 500px;
+            display: flex;
+            margin-top: auto;
+        }
+        @media (max-width: 800px) {
+            margin-top: 100px;
             max-width: 400px;
         }
         &__voice-control-img {

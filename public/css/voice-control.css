@@ -11,6 +11,11 @@
   padding: 0 20px;
   margin: 0 auto;
 }
+@media (max-width: 1650px) {
+  .container {
+    max-width: 1400px;
+  }
+}
 body {
   background-color: #181818;
 }
@@ -18,15 +23,37 @@ body {
   display: flex;
   justify-content: space-between;
   padding-top: 30px;
+  padding-bottom: 30px;
 }
 @media (max-width: 1650px) {
   .container-voice-control {
     align-items: center;
   }
 }
+@media (max-width: 1240px) {
+  .container-voice-control {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
+@media (max-width: 800px) {
+  .container-voice-control {
+    flex-direction: column;
+  }
+}
+@media (max-width: 800px) {
+  .container-voice-control {
+    position: relative;
+  }
+}
 .container-voice-control .section-description {
   color: #fff;
   margin-right: 40px;
+}
+@media (max-width: 800px) {
+  .container-voice-control .section-description {
+    margin-right: 0;
+  }
 }
 .container-voice-control .section-description__title {
   font-size: 56px;
@@ -36,23 +63,83 @@ body {
   font-family: 'montserrat-light';
   max-width: 400px;
 }
+@media (max-width: 1650px) {
+  .container-voice-control .section-description__title {
+    font-size: 50px;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 1240px) {
+  .container-voice-control .section-description__title {
+    max-width: initial;
+  }
+}
+@media (max-width: 450px) {
+  .container-voice-control .section-description__title {
+    font-size: 34px;
+    line-height: 37px;
+    margin-top: 0;
+  }
+}
 .container-voice-control .section-description__paragraph {
   max-width: 563px;
   font-size: 22px;
   line-height: 170%;
   font-family: 'montserrat-light';
 }
+@media (max-width: 1240px) {
+  .container-voice-control .section-description__paragraph {
+    max-width: initial;
+  }
+}
 .container-voice-control .section-description__paragraph:not(:last-of-type) {
   margin-bottom: 30px;
+}
+@media (max-width: 1650px) {
+  .container-voice-control .section-description__paragraph:not(:last-of-type) {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 1650px) {
+  .container-voice-control .section-description__paragraph {
+    font-size: 20px;
+    line-height: 160%;
+  }
+}
+@media (max-width: 450px) {
+  .container-voice-control .section-description__paragraph {
+    font-size: 16px;
+    line-height: 27px;
+  }
 }
 .container-voice-control .section-description .wrapper-voice {
   margin-top: 35px;
   text-transform: uppercase;
 }
+@media (max-width: 1650px) {
+  .container-voice-control .section-description .wrapper-voice {
+    margin-top: 25px;
+  }
+}
+@media (max-width: 800px) {
+  .container-voice-control .section-description .wrapper-voice {
+    max-width: 315px;
+    position: absolute;
+    bottom: -10px;
+    transform: translateY(100%);
+    padding-bottom: 20px;
+  }
+}
 .container-voice-control .section-description .wrapper-voice__tell {
   font-size: 44px;
   line-height: 90%;
   font-family: 'montserrat-black';
+}
+@media (max-width: 1650px) {
+  .container-voice-control .section-description .wrapper-voice__tell {
+    font-size: 34px;
+    line-height: 80%;
+  }
 }
 .container-voice-control .section-description .wrapper-voice__okay-yamaguchi {
   display: flex;
@@ -63,8 +150,18 @@ body {
   line-height: 90%;
   font-family: 'montserrat-black';
 }
-.container-voice-control .section-description .wrapper-voice__okay-yamaguchi .quotes {
-  font-family: 'montserrat-regular';
+@media (max-width: 1650px) {
+  .container-voice-control .section-description .wrapper-voice__okay-yamaguchi {
+    margin-top: 10px;
+    font-size: 50px;
+    line-height: 80%;
+  }
+}
+@media (max-width: 800px) {
+  .container-voice-control .section-description .wrapper-voice__okay-yamaguchi {
+    margin-left: 0;
+    line-height: 100%;
+  }
 }
 .container-voice-control .wrapper-levitation-girl {
   position: relative;
@@ -75,6 +172,11 @@ body {
   .container-voice-control .wrapper-levitation-girl {
     height: 600px;
     max-height: 100%;
+  }
+}
+@media (max-width: 1240px) {
+  .container-voice-control .wrapper-levitation-girl {
+    margin-top: 20px;
   }
 }
 .container-voice-control .wrapper-levitation-girl .wrapper-girl {
@@ -117,6 +219,19 @@ body {
 }
 @media (max-width: 1650px) {
   .container-voice-control .wrapper-voice-control-yamaguchi {
+    max-width: 400px;
+  }
+}
+@media (max-width: 1240px) {
+  .container-voice-control .wrapper-voice-control-yamaguchi {
+    max-width: 500px;
+    display: flex;
+    margin-top: auto;
+  }
+}
+@media (max-width: 800px) {
+  .container-voice-control .wrapper-voice-control-yamaguchi {
+    margin-top: 100px;
     max-width: 400px;
   }
 }
