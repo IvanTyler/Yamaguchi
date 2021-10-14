@@ -1,0 +1,123 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+@import url('../css/fonts/main-fonts.css');
+
+.container {
+    max-width: 1800px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+body {
+    background-color: #181818;
+}
+
+.container-voice-control {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    @media (max-width: 1650px) {
+        align-items: center;
+    }
+    .section-description {
+        color: #fff;
+        margin-right: 40px;
+        &__title {
+            font-size: 56px;
+            line-height: 60px;
+            margin-bottom: 50px;
+            margin-top: 25px;
+            font-family: 'montserrat-light';
+            max-width: 400px;
+        }
+        &__paragraph {
+            max-width: 563px;
+            font-size: 22px;
+            line-height: 170%;
+            font-family: 'montserrat-light';
+            &:not(:last-of-type) {
+                margin-bottom: 30px;
+            }
+        }
+        .wrapper-voice {
+            margin-top: 35px;
+            text-transform: uppercase;
+            &__tell {
+                font-size: 44px;
+                line-height: 90%;
+                font-family: 'montserrat-black';
+            }
+            &__okay-yamaguchi {
+                display: flex;
+                width: 100%;
+                margin-top: 20px;
+                margin-left: 50px;
+                font-size: 61px;
+                line-height: 90%;
+                font-family: 'montserrat-black';
+                .quotes {
+                    font-family: 'montserrat-regular';
+                }
+            }
+        }
+    }
+    .wrapper-levitation-girl {
+        position: relative;
+        width: 243px;
+        max-width: 100%;
+        @media (max-width: 1650px) {
+            height: 600px;
+            max-height: 100%;
+        }
+        .wrapper-girl {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            overflow-y: hidden;
+            width: 100%;
+            height: 100%;
+            margin-right: 40px;
+            animation: girlLevitation 4s infinite;
+            @keyframes girlLevitation {
+                0% {
+                    top: 0;
+                }
+                50% {
+                    top: 25px;
+                }
+                100% {
+                    top: 0;
+                }
+            }
+            &__girl-img {
+                width: 100%;
+                height: 100%;
+                object-fit: scale-down;
+                transform: translateY(115%);
+            }
+        }
+        &__hole-img {
+            position: absolute;
+            left: 0;
+            right: 0;
+            z-index: -1;
+            width: 100%;
+            transition: 0.5s;
+        }
+    }
+    .wrapper-voice-control-yamaguchi {
+        max-width: 730px;
+        @media (max-width: 1650px) {
+            max-width: 400px;
+        }
+        &__voice-control-img {
+            width: 100%;
+        }
+    }
+}
